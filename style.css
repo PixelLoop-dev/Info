@@ -99,3 +99,9 @@ body {
     outline: none;
     box-shadow: 0 0 5px 2px #284c6c;
 }
+
+@media (max-width: 300px) {
+    .box {
+        transform: scale(2);
+    }
+}
