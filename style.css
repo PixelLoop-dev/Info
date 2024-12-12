@@ -1,0 +1,101 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+:root {
+    --random-x: ${Math.random() * 100}px;
+    --random-y: ${Math.random() * 40}px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("img/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.box{
+        text-align: center;
+        padding: 30px;
+        border-radius: 10px;
+        width: 300px;
+        box-shadow: 0 0 10px #494b75;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transition: all 0.3s ease;
+}
+
+.box:hover{
+    box-shadow: 0 0 20px #494b75;
+}
+
+
+.avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 10px #494b75;
+}
+
+
+.nickname{
+    color: #284c6c;
+    text-shadow: 0 0 10px #494b75;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 400;
+    color: #cccccc;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    
+    background-color: #1e1e1e;
+    color: #cccccc;
+
+    border: 1px solid #284c6c; 
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    width: 200px;
+
+}
+
+.button:hover {
+    background: linear-gradient(to bottom right, #284c6c, #2f6390);
+    color: #1e1e1e;
+    transform: scale(1.05);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #284c6c;
+}
