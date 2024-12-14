@@ -11,10 +11,10 @@ body {
     align-items: center;
     height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("img/Background.png");
+/*     background-image: url("img/Background.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center; */
 }
 
 /* .video-background {
